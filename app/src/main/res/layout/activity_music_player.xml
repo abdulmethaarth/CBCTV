@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+
+    android:orientation="vertical"
+    android:background="@drawable/newbg"
+    android:weightSum="5"
+
+    >
+    <RelativeLayout
+        android:layout_marginTop="135dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+
+            android:background="@drawable/mywheel"
+            />
+        <!--        <ImageView-->
+
+        <!--            android:background="@drawable/playbtn"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_centerVertical="true"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            />-->
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            >
+            <ImageButton
+                android:tint="@color/myplaybtn"
+
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/buttonPlayStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/playbtn" /> </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_weight="2"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+  <LinearLayout
+      android:weightSum="5"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+
+      <LinearLayout
+          android:layout_weight="1"
+          android:orientation="horizontal"
+          android:gravity="center"
+
+
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <TextView
+              android:textColor="@android:color/white"
+              android:id="@+id/textCurrentTime"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/zero"
+              android:layout_marginLeft="40dp"/>
+          <TextView
+              android:textColor="@android:color/white"
+              android:id="@+id/textTotalDuration"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="0.00"
+              android:layout_marginLeft="240dp"/>
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1">
+          <SeekBar
+              android:id="@+id/SeekBar01"
+              style="@style/Widget.AppCompat.SeekBar"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              />
+
+      </LinearLayout>
+
+
+
+
+
+
+  </LinearLayout>
+
+
+
+
+</LinearLayout>

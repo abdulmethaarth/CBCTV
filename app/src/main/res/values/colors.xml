@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000054</color>
+    <color name="colorPrimaryDark">#df4000</color>
+    <color name="colorAccent">#ff6122</color>
+    <color name="background_toolbar">#e3333333</color>
+    <color name="black">#000000</color>
+    <color name="roseProgess">#ff1a79</color>
+    <color name="bgColoris">#f8629f</color>
+    <color name="mainfontColor">#fefeff</color>
+    <color name="mainBg">#001c4b</color>
+    <color name="colorShimmer">#dddddd</color>
+    <color name="topColor">#242774</color>
+    <color name="white">#dddddd</color>
+
+    <color name="pureWhite">#ffffff</color>
+
+    <color name="normal">#FF58585A</color>
+    <color name="pressed">#ffffff</color> // what ever pressed value u want
+    <color name="transparent"></color>
+
+
+    <color name="bgBackground">#000054</color>
+    <color name="borderDevider">#06417B</color>
+
+    <color name="inputColor" >#70038b</color>
+    <color name="textareaColor">#250a78</color>
+
+    <color name="msgbg">#000041</color>
+    <color name="colorfeebbacktop">#5b0276</color>
+    <color name="colorfeedbackbottom">#69017a</color>
+
+    <color name="videoBG">#FF0068</color>
+    <color name="podcastBG">#900E8B</color>
+    <color name="feedbackBG">#162A46</color>
+    <color name="feedbackfieldBG">#0C1B32</color>
+    <color name="feedbackText">#006BCD</color>
+    <color name="firstBg">#FFE57D</color>
+    <color name="menuBG">#050D18</color>
+    <color name="menuText">#006BCD</color>
+    <color name="frontTop">#591341</color>
+    <color name="podcastTop">#82087D</color>
+    <color name="reelsTop">#E70053</color>
+    <color name="myplaybtn">#E29B1B</color>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_radio"
+        android:icon="@drawable/ic_radio"
+        android:title="Radio" />
+
+    <item
+        android:id="@+id/nav_cycle"
+        android:icon="@drawable/ic_video"
+        android:title="Reels" />
+    <!--<item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_podcast"
+        android:title="Podcast" />-->
+
+    <item
+        android:id="@+id/nav_schedule"
+        android:icon="@drawable/ic_reset"
+        android:title="Schedule" />
+
+    <item
+        android:id="@+id/nav_reset"
+        android:icon="@drawable/ic_reset"
+        android:title="Change Radio Station" />
+</menu>

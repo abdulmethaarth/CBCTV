@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        >
+
+        <RelativeLayout
+
+
+            android:id="@+id/relative"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:id="@+id/imageView"
+
+                android:src="@drawable/menu_icon"
+
+                android:background="@mipmap/ic_launcher"
+                android:layout_height="100dp"/>
+
+
+
+             <TextView
+                 android:id="@+id/txt_name"
+                 android:textColor="@color/white"
+                 android:text="                        "
+
+                  android:gravity="left"
+                 android:layout_toRightOf="@id/imageView"
+                 android:layout_marginLeft="10dp"
+                 style="@style/Base.TextAppearance.AppCompat.Medium"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:background="@color/colorShimmer"
+                 android:layout_centerInParent="true"
+
+                 />
+
+         </RelativeLayout>
+
+
+
+
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/borderDevider"
+            android:id="@+id/view_topBorder"/>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.affinityopus.cbc_tv"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 2
+        versionName "2.0"
+
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    signingConfigs {
+        config {
+            storeFile file("CBCTV.jks") // signature file path
+            storePassword "RadioRangh"
+            keyAlias "cbctvekm"
+            keyPassword "RadioRangh"   // signature password
+            v2SigningEnabled false
+        }
+    }
+
+    aaptOptions {
+        additionalParameters "--no-version-vectors"
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.facebook.shimmer:shimmer:0.4.0'
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+//noinspection GradleCompatible
+implementation "com.android.support:support-compat:28.0.0"
+   // implementation 'com.android.support:design:28.0.0-alpha1'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation "androidx.cardview:cardview:1.0.0"
+
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.4'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.google.android.material:material:1.3.0-alpha02'
+
+    implementation 'androidx.media:media:1.2.0'
+
+    //exoplayer
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.11.2'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.13.3'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.11.2'
+  //  implementation "com.google.android.exoplayer:exoplayer-smoothstreaming:$exoPlayerVersion"
+
+
+    implementation "com.google.android.exoplayer:exoplayer:2.13.3"
+
+    //Exoplayer IMA(Interactive Media Ads)
+    implementation ("com.google.android.exoplayer:extension-ima:2.13.3"){
+        exclude module: 'support-v4'
+    }
+
+    implementation 'com.google.code.gson:gson:2.8.2'
+   // implementation(name:'theoplayer-android-dist-8a9d6992-829a-4de8-8499-7b64d2b8cc64-2.83.1-minapi21-release', ext:'aar')
+
+    implementation 'com.google.android.material:material:1.2.0-alpha05'
+    implementation 'androidx.mediarouter:mediarouter:1.2.2'
+    implementation 'com.google.android.gms:play-services-cast-framework:18.1.0'
+}

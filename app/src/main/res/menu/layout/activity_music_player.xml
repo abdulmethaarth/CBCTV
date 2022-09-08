@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="match_parent"
+    tools:context=".RadioPlayer"
+
+    android:gravity="center"
+
+    android:orientation="vertical"
+    android:background="@drawable/mainimage"
+
+
+    >
+
+    <LinearLayout
+         android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="6">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/scrollTop"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+
+                android:background="@color/white"
+
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Welcome to Radio Rangh...   Welcome to Radio Rangh...  "
+                />
+        </LinearLayout>
+
+        <!-- TODO: Update blank fragment layout -->
+        <!--    <ImageView-->
+        <!--        android:layout_marginTop="100dp"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:scaleType="centerCrop"-->
+        <!--        android:src="@drawable/logobg"-->
+
+
+        <!--        />-->
+
+        <LinearLayout
+             android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="100dp"
+
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_weight="3"
+                android:paddingVertical="20dp"
+                android:layout_gravity="top"
+                android:background="@drawable/bgimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <ImageButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:src="@drawable/playbtn"
+                    android:id="@+id/playBtn"
+
+                    android:background="@android:color/transparent"
+
+
+                    />
+
+            </LinearLayout>
+
+            <!--//         android:paddingTop="209dp"-->
+
+            <!--        android:layout_marginLeft="134dp"-->
+
+            <!--        <ImageButton-->
+            <!--            android:paddingTop="209dp"-->
+
+            <!--            android:layout_marginLeft="134dp"-->
+
+            <!--            android:id="@+id/pause"-->
+            <!--            android:src="@drawable/pausebtn"-->
+            <!--            android:background="@android:color/transparent"-->
+
+
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content" />-->
+
+
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/activity_web"
+                android:id="@+id/sidebar"
+                android:layout_marginBottom="0dp"
+
+                />
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+     <LinearLayout
+         android:layout_weight="2"
+         android:weightSum="2"
+         android:paddingTop="40dp"
+         android:paddingBottom="100dp"
+         android:orientation="vertical"
+
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+
+             <SeekBar
+                 android:layout_weight="1"
+
+                 android:id="@+id/positionBar"
+                 android:paddingVertical="10dp"
+                 android:layout_width="300dp"
+                 android:thumb="@android:color/holo_purple"
+                 android:layout_height="wrap_content"
+                 />
+
+
+
+
+         <LinearLayout
+             android:layout_weight="1"
+             android:orientation="horizontal"
+             android:gravity="center"
+
+
+             android:layout_width="match_parent"
+             android:layout_height="40dp">
+             <TextView
+                 android:textColor="@android:color/white"
+                 android:id="@+id/textCurrentTime"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/zero"
+                 android:layout_marginLeft="40dp"/>
+             <TextView
+                 android:textColor="@android:color/white"
+                 android:id="@+id/textTotalDuration"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="-1:49"
+                 android:layout_marginLeft="240dp"/>
+         </LinearLayout>
+
+     </LinearLayout>
+
+
+
+        <!--    <Button-->
+        <!--        android:id="@+id/btn_play"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text=""-->
+        <!--         android:layout_marginHorizontal="100dp"-->
+        <!--        android:background="@drawable/play"-->
+
+        <!--        />-->
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

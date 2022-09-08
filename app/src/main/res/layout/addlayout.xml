@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+
+
+        <ImageButton
+            android:id="@+id/idclose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/white"
+            android:src="@drawable/ic_close"
+            android:background="@android:color/transparent"/>
+
+    <ImageView
+        android:layout_below="@+id/idclose"
+        android:id="@+id/addImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@android:color/transparent"/>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:id="@+id/sidebar_main"
+
+    android:gravity="center"
+
+    tools:context=".WebActivity">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ic_facebook"
+
+        android:background="@drawable/ic_facebook"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ic_whatsapp"
+        android:background="@drawable/ic_whatsapp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ic_twitter"
+        android:background="@drawable/ic_twitter"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/ic_instagram"
+        android:background="@drawable/ic_instagram"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ic_youtube"
+        android:background="@drawable/ic_youtubes"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"/>
+
+
+</LinearLayout>

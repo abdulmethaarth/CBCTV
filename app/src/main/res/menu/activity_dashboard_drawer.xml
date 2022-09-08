@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single" >
+
+        <item
+            android:visible="false"
+            android:id="@+id/nav_radio"
+            android:icon="@drawable/ic_radio"
+            android:title="Switch Station" />
+        <item
+            android:id="@+id/nav_cycle"
+            android:icon="@drawable/ic_video"
+            android:title="Reels" />
+
+
+        <item
+            android:id="@+id/nav_live_stream"
+            android:icon="@drawable/ic_podcast"
+            android:title="Live Stream" />
+
+
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_feedback_black_24dp"
+            android:title="Feedback" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share"
+            android:title="Share" />
+
+
+
+
+    </group>
+
+
+</menu>
